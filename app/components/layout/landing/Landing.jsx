@@ -1,6 +1,6 @@
 import React from "react";
 // import Footer from "./components/layouts/footer/Footer";
-// import MyBarChart from "./components/common/Charts/BarChart";
+import MyBarChart from "../../common/BarChart";
 
 const Landing = () => {
   return (
@@ -162,7 +162,7 @@ const Landing = () => {
       </section>
 
       {/* Footer */}
-      {/* <MyBarChart /> */}
+      <MyBarChart />
       {/* <Footer /> */}
     </div>
   );
