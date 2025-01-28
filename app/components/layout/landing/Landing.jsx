@@ -1,5 +1,8 @@
 import React from "react";
 // import Footer from "./components/layouts/footer/Footer";
+
+import styles from "../../../main.module.scss";
+
 import MyBarChart from "../../common/BarChart";
 
 const Landing = () => {
@@ -9,7 +12,9 @@ const Landing = () => {
       <header className="bg-blue-600 text-white py-8">
         <div className="container mx-auto flex items-center justify-between px-4">
           {/* Logo */}
-          <p className="text-3xl font-bold">LOGO</p>
+          <div className={styles.logo}>
+            <p className="text-3xl font-bold">LOGO</p>
+          </div>
 
           {/* Botón de contacto */}
           <a
