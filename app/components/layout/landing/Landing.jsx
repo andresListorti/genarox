@@ -12,9 +12,9 @@ const Landing = () => {
       <header className="bg-blue-600 text-white py-8">
         <div className="container mx-auto flex items-center justify-between px-4">
           {/* Logo */}
-          <div className={styles.logo}>
+          {/* <div className={styles.logo}>
             <p className="text-3xl font-bold">LOGO</p>
-          </div>
+          </div> */}
 
           {/* Botón de contacto */}
           <a

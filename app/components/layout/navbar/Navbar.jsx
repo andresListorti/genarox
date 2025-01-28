@@ -3,13 +3,17 @@
 import CartWidget from "../../common/CardWidget";
 import Logo from "../../common/Logo";
 import Link from "next/link";
+import "./navbar.css";
 
 const Navbar = () => {
   return (
     <div>
       <header className="bg-gray-200/90 h-24 text-lg px-5 flex justify-around items-center">
         {/* Logo o nombre empresa */}
-        <Link href="/" className="flex-shrink-0">
+        <Link
+          href="/"
+          className="log flex-shrink-0 text-black font-bold hover:text-red-400 text-3xl"
+        >
           <Logo />
         </Link>
 
@@ -51,7 +55,10 @@ const Navbar = () => {
           </ul>
 
           {/* cart + widget A la derecha */}
-          <Link href="/cart" className="flex-shrink-0">
+          <Link
+            href="/cart"
+            className="flex-shrink-0 text-black font-bold hover:text-red-400"
+          >
             <CartWidget />
           </Link>
         </nav>
