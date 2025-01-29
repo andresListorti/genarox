@@ -4,6 +4,7 @@ import Navbar from "./components/layout/navbar/Navbar";
 import Image from "next/image";
 import { products } from "./productsMock";
 import Men from "./components/layout/men/Men.jsx";
+import NotFound from "./components/layout/notFound/NotFound.jsx";
 // import stilos from "./main.module.scss";
 // import Counter from "./components/common/Counter";
 
@@ -18,6 +19,7 @@ export const metadata = {
 export default function Home() {
   return (
     <>
+      {/* <NotFound /> */}
       <Navbar />
       <Men />
       <Landing />
