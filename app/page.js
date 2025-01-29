@@ -5,7 +5,7 @@ import Image from "next/image";
 import { products } from "./productsMock";
 import Men from "./components/layout/men/Men.jsx";
 import NotFound from "./components/layout/notFound/NotFound.jsx";
-// import stilos from "./main.module.scss";
+import stilos from "./main.module.scss";
 // import Counter from "./components/common/Counter";
 
 export const metadata = {
