@@ -3,6 +3,7 @@ import Landing from "./components/layout/landing/Landing";
 import Navbar from "./components/layout/navbar/Navbar";
 import Image from "next/image";
 import { products } from "./productsMock";
+import Men from "./components/layout/men/Men.jsx";
 // import stilos from "./main.module.scss";
 // import Counter from "./components/common/Counter";
 
@@ -18,6 +19,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
+      <Men />
       <Landing />
       <Image
         src={"/business-2049312_1280.jpg"}
