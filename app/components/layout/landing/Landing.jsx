@@ -167,7 +167,7 @@ const Landing = () => {
       </section>
 
       {/* Footer */}
-      <MyBarChart />
+      {/* <MyBarChart /> */}
       {/* <Footer /> */}
     </div>
   );

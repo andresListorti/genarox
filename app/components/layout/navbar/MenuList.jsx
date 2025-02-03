@@ -1,26 +1,17 @@
-"use client";
-
-import CartWidget from "../../common/CartWidget";
-import Logo from "../../common/Logo";
 import Link from "next/link";
-import "./navbar.css";
-import Menu from "./Menu";
+import CartWidget from "../../common/CartWidget";
 
-const Navbar = () => {
+const MenuList = ({ isOpen, handleClick }) => {
   return (
-    <div>
-      <header className="bg-gray-200/90 h-24 text-lg px-5 flex justify-around items-center">
-        {/* Logo o nombre empresa */}
-        <Link
-          href="/"
-          className="log flex-shrink-0 text-black font-bold hover:text-red-400 text-3xl"
-        >
-          <Logo />
-        </Link>
-
-        {/* Listado de categorias clickeables */}
-        <nav className="flex items-center space-x-10">
-          <ul className="flex space-x-8">
+    <div
+      className={`fixed top-0 right-0 h-full w-64 bg-white shadow-lg transform z-50
+        ${isOpen ? "translate-x-0" : "translate-x-full"} 
+        transition-transform duration-300 ease-in-out pointer-events-auto`}
+    >
+      {/* Contenedor del menú */}
+      <aside className="w-full h-full bg-white flex flex-col p-4 overflow-y-auto">
+        <nav className="w-full">
+          <ul className="flex flex-col space-y-4 w-full pl-6">
             <li>
               <Link
                 href="/category/hombre"
@@ -39,7 +30,7 @@ const Navbar = () => {
             </li>
             <li>
               <Link
-                href="./pages/acceso.html"
+                href="/pages/acceso.html"
                 className="text-black font-bold hover:text-red-400"
               >
                 Acceso
@@ -47,14 +38,15 @@ const Navbar = () => {
             </li>
             <li>
               <Link
-                href="./pages/contacto.html"
+                href="/pages/contacto.html"
                 className="text-black font-bold hover:text-red-400"
               >
                 Contacto
               </Link>
             </li>
-            {/* cart + widget A la derecha */}
-            <li>
+            <li className="mt-auto">
+              {" "}
+              {/* Empuja el carrito hacia abajo */}
               <Link
                 href="/cart"
                 className="flex-shrink-0 text-black font-bold hover:text-red-400"
@@ -64,10 +56,9 @@ const Navbar = () => {
             </li>
           </ul>
         </nav>
-        <Menu />
-      </header>
+      </aside>
     </div>
   );
 };
 
-export default Navbar;
+export default MenuList;
