@@ -1,31 +1,12 @@
-import Link from "next/link";
-import Navbar from "../components/layout/navbar/Navbar";
-import Footer from "../components/layout/footer/Footer";
+"use client";
 
-export const metadata = {
-  title: "Genaro | Zapatos e Indumentaria de Cuero para Hombre y mujer",
-  description:
-    "Descubre la mejor colección de zapatos e indumentaria de cuero para hombre y mujer de Genaro. Últimas tendencias en calzado de calidad, estilo y confort.",
-  keywords:
-    "Zapatos de cuero, Indumentaria de cuero , Calzado de calidad, Moda de cuero, Calzado para hombre, Calzado para mujer, ultimas tendencias en calzado, Colección de zapatos, Estilo y confort, Accesorios de moda",
-  openGraph: {
-    title: "Genaro | Zapatos e Indumentaria de Cuero para Hombre y mujer",
-    description:
-      "Descubre la mejor colección de zapatos e indumentaria de cuero para hombre y mujer de Genaro. Últimas tendencias en calzado de calidad, estilo y confort.",
-    url: "",
-    siteName: "Genaro | Zapatos e Indumentaria de Cuero para Hombre y mujer",
-    images: [
-      {
-        url: "https://res.cloudinary.com/dgiqb0ipg/image/upload/v1726159834/shoes-877939_1920_ghyeho.jpg",
-      },
-    ],
-  },
-};
+import { Button } from "@mui/material";
+import { useRouter } from "next/navigation";
 
 const ContactPage = () => {
+  const router = useRouter();
   return (
     <>
-      <Navbar />
       <main
         className="flex flex-col items-center justify-center w-full h-screen bg-cover bg-center bg-no-repeat"
         style={{
@@ -91,34 +72,15 @@ const ContactPage = () => {
               Enviar
             </button>
           </form>
-
-          {/* Redes Sociales */}
-          <div className="flex justify-center space-x-4 mt-6 text-gray-700">
-            <Link
-              href="https://www.facebook.com/"
-              target="_blank"
-              className="hover:text-blue-600"
-            >
-              <i className="fa-brands fa-facebook text-2xl"></i>
-            </Link>
-            <Link
-              href="https://www.instagram.com/"
-              target="_blank"
-              className="hover:text-pink-500"
-            >
-              <i className="fa-brands fa-instagram text-2xl"></i>
-            </Link>
-            <Link
-              href="https://web.whatsapp.com/"
-              target="_blank"
-              className="hover:text-green-500"
-            >
-              <i className="fa-brands fa-whatsapp text-2xl"></i>
-            </Link>
-          </div>
         </div>
+        <Button
+          variant="contained"
+          className="top-10"
+          onClick={() => router.back()}
+        >
+          Volver
+        </Button>
       </main>
-      <Footer />
     </>
   );
 };

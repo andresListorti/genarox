@@ -1,10 +1,3 @@
-import Landing from "./components/layout/landing/Landing";
-import Image from "next/image";
-import { products } from "./productsMock";
-import Men from "./components/layout/men/Men.jsx";
-import NotFound from "./components/layout/notFound/NotFound.jsx";
-import Hero from "./components/layout/hero/Hero";
-
 export const metadata = {
   title: "Genaro | Zapatos e Indumentaria de Cuero para Hombre y mujer",
   description:
@@ -25,33 +18,8 @@ export const metadata = {
   },
 };
 
-export default function Home() {
-  return (
-    <>
-      <Hero />
-      <Men />
-      <Landing />
-      <Image
-        src={"/business-2049312_1280.jpg"}
-        alt="imagen1"
-        width={500}
-        height={300}
-      />
-      <Image
-        src={
-          "https://res.cloudinary.com/dgiqb0ipg/image/upload/v1726159833/hombremoca_ugonuw.jpg"
-        }
-        alt="imagen2"
-        width={500}
-        height={300}
-        priority
-      />
-      <Image
-        src={products[0].imageUrl}
-        alt="imagen3"
-        width={500}
-        height={300}
-      />
-    </>
-  );
-}
+const layout = ({ children }) => {
+  return <>{children}</>;
+};
+
+export default layout;

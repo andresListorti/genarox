@@ -23,7 +23,7 @@ const Navbar = () => {
           <ul className="flex space-x-8">
             <li>
               <Link
-                href="/category/hombre"
+                href="/"
                 className="text-black font-bold hover:text-red-400"
               >
                 Hombre
@@ -31,7 +31,7 @@ const Navbar = () => {
             </li>
             <li>
               <Link
-                href="/category/mujer"
+                href="/"
                 className="text-black font-bold hover:text-red-400"
               >
                 Mujer
@@ -39,7 +39,7 @@ const Navbar = () => {
             </li>
             <li>
               <Link
-                href="./pages/acceso.html"
+                href="/"
                 className="text-black font-bold hover:text-red-400"
               >
                 Acceso
@@ -47,7 +47,7 @@ const Navbar = () => {
             </li>
             <li>
               <Link
-                href="./pages/contacto.html"
+                href="/contact"
                 className="text-black font-bold hover:text-red-400"
               >
                 Contacto
@@ -56,7 +56,7 @@ const Navbar = () => {
             {/* cart + widget A la derecha */}
             <li>
               <Link
-                href="/cart"
+                href="/"
                 className="flex-shrink-0 text-black font-bold hover:text-red-400"
               >
                 <CartWidget />

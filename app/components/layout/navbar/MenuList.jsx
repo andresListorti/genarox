@@ -14,7 +14,7 @@ const MenuList = ({ isOpen, handleClick }) => {
           <ul className="flex flex-col space-y-4 w-full pl-6">
             <li>
               <Link
-                href="/category/hombre"
+                href="/"
                 className="text-black font-bold hover:text-red-400"
               >
                 Hombre
@@ -22,7 +22,7 @@ const MenuList = ({ isOpen, handleClick }) => {
             </li>
             <li>
               <Link
-                href="/category/mujer"
+                href="/"
                 className="text-black font-bold hover:text-red-400"
               >
                 Mujer
@@ -30,7 +30,7 @@ const MenuList = ({ isOpen, handleClick }) => {
             </li>
             <li>
               <Link
-                href="/pages/acceso.html"
+                href="/"
                 className="text-black font-bold hover:text-red-400"
               >
                 Acceso
@@ -38,7 +38,7 @@ const MenuList = ({ isOpen, handleClick }) => {
             </li>
             <li>
               <Link
-                href="/pages/contacto.html"
+                href="/contact"
                 className="text-black font-bold hover:text-red-400"
               >
                 Contacto
@@ -48,7 +48,7 @@ const MenuList = ({ isOpen, handleClick }) => {
               {" "}
               {/* Empuja el carrito hacia abajo */}
               <Link
-                href="/cart"
+                href="/"
                 className="flex-shrink-0 text-black font-bold hover:text-red-400"
               >
                 <CartWidget />
