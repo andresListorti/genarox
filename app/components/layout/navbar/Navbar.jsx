@@ -23,7 +23,7 @@ const Navbar = () => {
           <ul className="flex space-x-8">
             <li>
               <Link
-                href="/"
+                href="/men"
                 className="text-black font-bold hover:text-red-400"
               >
                 Hombre
@@ -31,7 +31,7 @@ const Navbar = () => {
             </li>
             <li>
               <Link
-                href="/"
+                href="/women"
                 className="text-black font-bold hover:text-red-400"
               >
                 Mujer
@@ -39,7 +39,7 @@ const Navbar = () => {
             </li>
             <li>
               <Link
-                href="/"
+                href="/access"
                 className="text-black font-bold hover:text-red-400"
               >
                 Acceso

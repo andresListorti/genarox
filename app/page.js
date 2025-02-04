@@ -4,6 +4,8 @@ import { products } from "./productsMock";
 import Men from "./components/layout/men/Men.jsx";
 import NotFound from "./components/layout/notFound/NotFound.jsx";
 import Hero from "./components/layout/hero/Hero";
+import Link from "next/link";
+import Collections from "./components/layout/collections/Collections";
 
 export const metadata = {
   title: "Genaro | Zapatos e Indumentaria de Cuero para Hombre y mujer",
@@ -29,8 +31,11 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <Men />
-      <Landing />
+
+      <Collections />
+
+      {/* <Men /> */}
+      {/* <Landing />
       <Image
         src={"/business-2049312_1280.jpg"}
         alt="imagen1"
@@ -51,7 +56,7 @@ export default function Home() {
         alt="imagen3"
         width={500}
         height={300}
-      />
+      /> */}
     </>
   );
 }

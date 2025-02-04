@@ -14,7 +14,7 @@ const MenuList = ({ isOpen, handleClick }) => {
           <ul className="flex flex-col space-y-4 w-full pl-6">
             <li>
               <Link
-                href="/"
+                href="/men"
                 className="text-black font-bold hover:text-red-400"
               >
                 Hombre
@@ -22,7 +22,7 @@ const MenuList = ({ isOpen, handleClick }) => {
             </li>
             <li>
               <Link
-                href="/"
+                href="/women"
                 className="text-black font-bold hover:text-red-400"
               >
                 Mujer
@@ -30,7 +30,7 @@ const MenuList = ({ isOpen, handleClick }) => {
             </li>
             <li>
               <Link
-                href="/"
+                href="/access"
                 className="text-black font-bold hover:text-red-400"
               >
                 Acceso

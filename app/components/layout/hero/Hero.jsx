@@ -19,7 +19,7 @@ const Hero = () => {
           Agrega el modelo T-650 a tu colección
         </p>
         <Link
-          href="/pages/mujer#oferta"
+          href="/products/category"
           className="mt-2 text-blanchedalmond hover:text-[#d5c2c2]"
         >
           Ver Producto
