@@ -1,10 +1,9 @@
-import Landing from "./components/layout/landing/Landing";
-import Image from "next/image";
-import { products } from "./productsMock";
-import Men from "./components/layout/men/Men.jsx";
-import NotFound from "./components/layout/notFound/NotFound.jsx";
+// import Landing from "./components/layout/landing/Landing";
+// import Image from "next/image";
+// import { products } from "./productsMock";
+// import Men from "./components/layout/men/Men.jsx";
 import Hero from "./components/layout/hero/Hero";
-import Link from "next/link";
+// import Link from "next/link";
 import Collections from "./components/layout/collections/Collections";
 
 export const metadata = {
