@@ -31,7 +31,7 @@ const Navbar = () => {
             </li>
             <li>
               <Link
-                href="/women"
+                href={`/products/mujer`}
                 className="text-black font-bold hover:text-red-400"
               >
                 Mujer
