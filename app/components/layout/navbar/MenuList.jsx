@@ -44,6 +44,14 @@ const MenuList = ({ isOpen, handleClick }) => {
                 Contacto
               </Link>
             </li>
+            <li>
+              <Link
+                href="/posts"
+                className="text-black font-bold hover:text-red-400"
+              >
+                Posts
+              </Link>
+            </li>
             <li className="mt-auto">
               {" "}
               {/* Empuja el carrito hacia abajo */}

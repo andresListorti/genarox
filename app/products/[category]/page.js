@@ -1,7 +1,7 @@
 import { products } from "../../productsMock";
 
-const Products = ({ params }) => {
-  const { category } = params;
+const Products = async ({ params }) => {
+  const { category } = await params;
   const filteredProducts = products.filter(
     (producto) => producto.category === category
   );
