@@ -10,6 +10,9 @@ const getPosts = async () => {
 
 const Posts = async () => {
   const posts = await getPosts();
+  // Andy
+  console.log("execute server side code");
+  
 
   return (
     <>
