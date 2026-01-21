@@ -1,11 +1,15 @@
 "use client"; // Asegura que se ejecuta en el cliente
 
+import React, { Suspense } from 'react';
 import { usePathname, useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import { products } from "../productsMock";
 import CatalogoList from "./CatalogoList";
 
+
+
 const WomanPage = () => {
+  
   const pathname = usePathname();
   console.log(`pathname ${pathname}`);
 
@@ -29,6 +33,8 @@ const WomanPage = () => {
   console.log(`filtered ${filteredProducts}`);
 
   return (
+     <Suspense fallback={<div>Loading...</div>}>
+            
     <div>
       <h1>Página de Mujeres</h1>
       <p>Categoría seleccionada: {category || "Todas"}</p>
@@ -39,6 +45,7 @@ const WomanPage = () => {
       </ul>
       <CatalogoList products={filteredProducts} />
     </div>
+         </Suspense>
   );
 };
 
