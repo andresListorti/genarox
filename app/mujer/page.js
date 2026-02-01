@@ -1,49 +1,49 @@
 "use client"; // Asegura que se ejecuta en el cliente
 
 import React, { Suspense } from 'react';
-import { usePathname, useSearchParams } from "next/navigation";
-import { useEffect, useState } from "react";
-import { products } from "../productsMock";
-import CatalogoList from "./CatalogoList";
+// import { usePathname, useSearchParams } from "next/navigation";
+// import { useEffect, useState } from "react";
+// import { products } from "../productsMock";
+// import CatalogoList from "./CatalogoList";
 
 
 
 const WomanPage = () => {
   
-  const pathname = usePathname();
-  console.log(`pathname ${pathname}`);
+  // const pathname = usePathname();
+  // console.log(`pathname ${pathname}`);
 
-  const searchParams = useSearchParams();
-  console.log(`searchParams ${searchParams}`);
+  // const searchParams = useSearchParams();
+  // console.log(`searchParams ${searchParams}`);
 
-  const category = searchParams.get("category"); // Obtiene el parámetro de la URL
+  // const category = searchParams.get("category"); // Obtiene el parámetro de la URL
 
-  const [filteredProducts, setFilteredProducts] = useState([]);
+  // const [filteredProducts, setFilteredProducts] = useState([]);
 
-  useEffect(() => {
-    const filteredProducts = products.filter(
-      (producto) => producto.category === category
-    );
-    if (category) {
-      // Simulación de filtrado de productos basado en la categoría
-      setFilteredProducts(filteredProducts);
-    }
-  }, [category]);
+  // useEffect(() => {
+  //   const filteredProducts = products.filter(
+  //     (producto) => producto.category === category
+  //   );
+  //   if (category) {
+  //     // Simulación de filtrado de productos basado en la categoría
+  //     setFilteredProducts(filteredProducts);
+  //   }
+  // }, [category]);
 
-  console.log(`filtered ${filteredProducts}`);
+  // console.log(`filtered ${filteredProducts}`);
 
   return (
      <Suspense fallback={<div>Loading...</div>}>
             
     <div>
       <h1>Página de Mujeres</h1>
-      <p>Categoría seleccionada: {category || "Todas"}</p>
+      {/* <p>Categoría seleccionada: {category || "Todas"}</p>
       <ul>
         {filteredProducts.map((product, index) => (
           <li key={index}>{product}</li>
         ))}
       </ul>
-      <CatalogoList products={filteredProducts} />
+      <CatalogoList products={filteredProducts} /> */}
     </div>
          </Suspense>
   );
